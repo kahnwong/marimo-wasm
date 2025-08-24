@@ -28,6 +28,12 @@ def _():
         np.random.randint(0, 100, size=(100, len(letters))), columns=list(letters)
     )
     df
+    return (df,)
+
+
+@app.cell
+def _(df):
+    df["A"].hist()
     return
 
 
