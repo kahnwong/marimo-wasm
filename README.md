@@ -1,5 +1,7 @@
 # marimo-wasm
 
+<https://marimo.karnwong.me>
+
 I like marimo better than jupyter, and because I need a quick scratchpad.
 
 ## Refs
