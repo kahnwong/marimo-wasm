@@ -33,6 +33,8 @@ def _():
 
 @app.cell
 def _(df):
+    import matplotlib.pyplot as plt  # noqa: F401
+
     df["A"].hist()
     return
 
@@ -75,21 +77,18 @@ def _():
 
 @app.cell
 def _(mo):
-    mo.md(r"""# BeautifulSoup""")
+    mo.md(r"""# requests""")
     return
 
 
 @app.cell
 def _():
     import requests
-    from bs4 import BeautifulSoup
 
-    r = requests.get("https://example.com")
+    r = requests.get("https://api.sampleapis.com/coffee/hot")
     print(f"status code: {r.status_code}")
 
-    soup = BeautifulSoup(r.content, features="lxml")
-    content = soup.get_text()
-    print(f"content: {content}")
+    print(r.json())
     return
 
 
