@@ -74,6 +74,26 @@ def _():
 
 
 @app.cell
+def _(mo):
+    mo.md(r"""# BeautifulSoup""")
+    return
+
+
+@app.cell
+def _():
+    import requests
+    from bs4 import BeautifulSoup
+
+    r = requests.get("https://example.com")
+    print(f"status code: {r.status_code}")
+
+    soup = BeautifulSoup(r.content, features="lxml")
+    content = soup.get_text()
+    print(f"content: {content}")
+    return
+
+
+@app.cell
 def _():
     return
 
