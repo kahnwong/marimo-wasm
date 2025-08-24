@@ -8,4 +8,6 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "marimo>=0.15.0",
+    "pandas>=2.3.2",
+    "pydantic>=2.11.7",
 ]

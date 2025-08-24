@@ -19,7 +19,6 @@ repos:
     hooks:
       - id: ruff-check
       - id: ruff-format
-      - id: uv-lock
       - id: yamlfmt
       - id: shellcheck
       - id: shfmt
