@@ -470,11 +470,11 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "marimo", specifier = ">=0.19.1" },
-    { name = "matplotlib", specifier = ">=3.10.5" },
-    { name = "pandas", specifier = ">=2.3.2" },
-    { name = "pydantic", specifier = ">=2.11.7" },
-    { name = "requests", specifier = ">=2.32.5" },
+    { name = "marimo", specifier = ">=0.23.3" },
+    { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "pandas", specifier = ">=3.0.1" },
+    { name = "pydantic", specifier = ">=2.12.5" },
+    { name = "requests", specifier = ">=2.33.1" },
 ]
 
 [[package]]
